@@ -325,7 +325,7 @@ def main():
     args = parser.parse_args()
 
     print("hello LWT")
-    
+
     if(args.can == None):
         args.can = 'can0' 
 
