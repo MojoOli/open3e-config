@@ -464,6 +464,7 @@ def main():
     if(mqtt_client != None):
         if(args.verbose):
             print("closing MQTT client")
+        mqtt_client.publish(mqttTopic + "/LWT" , "offline", qos=0,  retain=True)  #TODO clean way?
         mqtt_client.disconnect()
 
 
