@@ -324,7 +324,8 @@ def main():
     parser.add_argument("-v", "--verbose", action='store_true', help="verbose info")
     args = parser.parse_args()
 
-
+    print("hello LWT")
+    
     if(args.can == None):
         args.can = 'can0' 
 
